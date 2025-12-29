@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import BookingForm
+from .models import Booking
 
 # Create your views here.
 
@@ -31,3 +32,15 @@ def create_booking(request):
         'form': form
     }
     return render(request, 'booking/create_booking.html', context)
+
+
+@login_required
+def booking_list(request):
+    """
+    View to display a list of bookings for the logged-in user.
+    """
+    # Fetch only the bookings belonging to the current user, ordered by date
+    bookings = Booking.objects.filter(
+        user=request.user).order_by('booking_date')
+
+    return render(request, 'booking/booking_list.html', {'bookings': bookings})
