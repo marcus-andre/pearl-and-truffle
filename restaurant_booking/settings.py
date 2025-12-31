@@ -57,6 +57,8 @@ INSTALLED_APPS = [
     'cloudinary',
     'booking',
 ]
+# Force Django to use Cloudinary for static files in production
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
