@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="auth-card text-center p-5">
+        <h2 class="mb-4 text-danger">Cancel Reservation</h2>
+        <p class="lead">Are you sure you want to cancel your booking for <strong>{{ object.booking_date }}</strong> at <strong>{{ object.booking_time }}</strong>?</p>
+        <p class="text-white-50">This action cannot be undone.</p>
+        
+        <form method="post" class="mt-4">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger px-5 me-2">Yes</button>
+            <a href="{% url 'booking_list' %}" class="btn btn-secondary px-5">Go Back</a>
+        </form>
+    </div>
+</div>
+{% endblock %}

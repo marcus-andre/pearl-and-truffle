@@ -77,7 +77,27 @@ h1 {
     border-radius: 8px;
 }
 
+/* Adjusts the appearance of the booking time dropdown selector */
+select[name="booking_time"] {
+    max-height: 200px; /* Prevents overflow */
+    width: auto;
+    min-width: 150px;
+    background: rgba(255, 255, 255, 0.9) !important; 
+    border: none;
+    border-radius: 8px;
+    padding: 0.375rem 0.75rem;
+}
 
+/* Styles individual options for readability */
+select[name="booking_time"] option {
+    background-color: #2c2c2c; 
+    color: white;
+}
+
+/* Custom spacing for Action Buttons */
+.gap-2 {
+    gap: 0.5rem !important;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
