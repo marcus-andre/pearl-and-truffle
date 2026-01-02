@@ -103,11 +103,6 @@ Based on the project's requirements, the following tools were implemented in the
 
 ---
 
-## 🗄️ Database Schema
-The project uses a relational database (PostgreSQL). Below is the Entity Relationship Diagram (ERD) detailing the relationships between the User and Booking models.
-
-![Database Schema](./documentation/erd-diagram.png)
-
 ## 🚀 Deployment Procedure
 
 The project was deployed using **Heroku**. The live link can be found here: [Pearl & Truffle Live Site](https://pearl-and-truffle-booking-860a3739edd9.herokuapp.com/)
