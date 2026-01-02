@@ -45,7 +45,7 @@ All files passed with no critical errors.
 * *Note: `settings.py` may contain "line too long" warnings due to unavoidable Django configuration strings (like AUTH_PASSWORD_VALIDATORS), which is acceptable practice.*
 
 **Evidence (Example: `views.py`)**
-![Python Validation Screenshot](./documentation/python-validation.jpg)
+![Python Validation Screenshot](./documentation/python-validator.jpg)
 
 **Summary of Checked Files**:
 
