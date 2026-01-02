@@ -58,7 +58,24 @@ All files passed with no critical errors.
 | **booking/admin.py** | ✅ Pass | Zero errors |
 | **restaurant_booking/urls.py** | ✅ Pass | Zero errors |
 
+
 ---
+
+## ⚡ Performance & Accessibility (Lighthouse)
+
+The deployed application was audited using Google Chrome's built-in **Lighthouse** tool to assess performance, accessibility, and best practices.
+
+**Summary of Results:**
+The application achieved high scores across all metrics, ensuring a fast and accessible user experience.
+
+* **Performance:** 99
+* **Accessibility:** 95
+* **Best Practices:** 100
+* **SEO:** 90
+
+![Lighthouse Audit Results](./documentation/lighthouse-result.jpg)
+
+> *Note: Accessibility scores were optimized by implementing high-contrast text and ensuring all interactive elements (buttons, links) utilize proper `aria-labels` for screen readers.*
 
 ## 🧪 Manual Testing
 
